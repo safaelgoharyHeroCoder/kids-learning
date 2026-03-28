@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kids Learning Games</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<style>
+body {
+    background-image: url("https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Comic Sans MS;
+}
+
+.overlay {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+}
+
+.jumbotron {
+    background-image: url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b");
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.panel img {
+    height:150px;
+    object-fit: cover;
+}
+
+.footer {
+    background:#333;
+    color:#fff;
+    padding:10px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand">Kids Learning</a>
+</div>
+
+<ul class="nav navbar-nav">
+<li class="active"><a href="#">Home</a></li>
+
+<!-- DROPDOWN -->
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown">Games
+<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">Letters</a></li>
+<li><a href="#">Numbers</a></li>
+</ul>
+</li>
+
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<!-- JUMBOTRON -->
+<div class="jumbotron text-center">
+<h1>Learn & Play 🎈</h1>
+<p>Fun learning for kids</p>
+<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+Start Game
+</button>
+</div>
+
+<!-- ALERT -->
+<div class="alert alert-info text-center">
+<span class="glyphicon glyphicon-star"></span>
+Welcome to fun learning!
+</div>
+
+<!-- PANELS -->
+<div class="container">
+<div class="row">
+
+<div class="col-sm-4">
+<div class="panel panel-primary">
+<div class="panel-heading">ABC Game <span class="label label-danger">New</span></div>
+<div class="panel-body text-center">
+<img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="img-responsive">
+<p>Learn letters</p>
+<button class="btn btn-success">Play</button>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="panel panel-success">
+<div class="panel-heading">Numbers</div>
+<div class="panel-body text-center">
+<img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" class="img-responsive">
+<p>Learn numbers</p>
+<button class="btn btn-info">Play</button>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="panel panel-warning">
+<div class="panel-heading">Colors</div>
+<div class="panel-body text-center">
+<img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png" class="img-responsive">
+<p>Learn colors</p>
+<button class="btn btn-danger">Play</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- PROGRESS -->
+<div class="container">
+<h3>Progress</h3>
+<div class="progress">
+<div class="progress-bar progress-bar-striped active" style="width:60%">60%</div>
+</div>
+</div>
+
+<!-- WELL -->
+<div class="container">
+<div class="well text-center">
+Great job! Keep learning 👏
+</div>
+</div>
+
+<!-- TABLE -->
+<div class="container">
+<h3>Score Table</h3>
+<table class="table table-bordered table-striped">
+<tr>
+<th>Name</th>
+<th>Score</th>
+</tr>
+<tr>
+<td>Ali</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Sara</td>
+<td>80</td>
+</tr>
+</table>
+</div>
+
+<!-- TABS -->
+<div class="container">
+<ul class="nav nav-tabs">
+<li class="active"><a data-toggle="tab" href="#home">Letters</a></li>
+<li><a data-toggle="tab" href="#menu1">Numbers</a></li>
+</ul>
+
+<div class="tab-content">
+<div id="home" class="tab-pane fade in active">
+<h3>ABC</h3>
+<p>A B C D</p>
+</div>
+
+<div id="menu1" class="tab-pane fade">
+<h3>123</h3>
+<p>1 2 3 4</p>
+</div>
+</div>
+</div>
+
+<!-- COLLAPSE -->
+<div class="container text-center">
+<button class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+Show Tips
+</button>
+
+<div id="demo" class="collapse">
+Practice every day 😊
+</div>
+</div>
+
+<!-- FORM -->
+<div class="container">
+<h3>Login</h3>
+<form>
+<input class="form-control input-lg" placeholder="Name"><br>
+<input class="form-control" placeholder="Email"><br>
+<button class="btn btn-success">Submit</button>
+</form>
+</div>
+
+<!-- MEDIA OBJECT -->
+<div class="container">
+<h3>Teacher</h3>
+<div class="media">
+<div class="media-left">
+<img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" width="60">
+</div>
+<div class="media-body">
+<h4 class="media-heading">Miss Teacher</h4>
+<p>Helping kids learn in fun way</p>
+</div>
+</div>
+</div>
+
+<!-- PAGINATION -->
+<div class="container text-center">
+<ul class="pagination">
+<li><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+</ul>
+</div>
+
+<!-- PAGER -->
+<div class="container text-center">
+<ul class="pager">
+<li><a href="#">Previous</a></li>
+<li><a href="#">Next</a></li>
+</ul>
+</div>
+
+<!-- MODAL -->
+<div id="myModal" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal">&times;</button>
+<h4>Start Game</h4>
+</div>
+
+<div class="modal-body">
+<p>Game will start soon 🎮</p>
+</div>
+
+<div class="modal-footer">
+<button class="btn btn-danger" data-dismiss="modal">Close</button>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- CAROUSEL -->
+<div id="myCarousel" class="carousel slide container" data-ride="carousel">
+<div class="carousel-inner">
+<div class="item active">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" style="width:100%">
+</div>
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9" style="width:100%">
+</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer text-center">
+<p>Kids Learning Website ❤️</p>
+</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
